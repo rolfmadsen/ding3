@@ -1,0 +1,25 @@
+@startuml
+title Title of the PlantUML diagram
+
+    participant Default participant
+    actor Actor
+    boundary Boundary
+    control Control
+    entity Entity
+    database Database
+
+    == Divider ==
+    "Actor1"->"Actor2": Message
+    note left of Actor1
+        You can place notes left/right/over/under participants.
+    end note
+
+    group Conditional
+        Some condition and alaternative outcome.
+    end
+
+    ""->"":
+    ""->"":
+    ""->"":
+
+@enduml
