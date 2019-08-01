@@ -20,10 +20,7 @@
 
 ### Search field and autocomplete
 
-![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.github.com/danskernesdigitalebibliotek/ding3/PlantUML\search\search-field-and-autocomplete.puml)
-
-PlantUML\search\search-field-and-autocomplete.puml
-C:\Github\ding3\ding3\PlantUML_sequence-diagrams\search\search-field-and-autocomplete.puml
+![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_sequence-diagrams/search/search-field-and-autocomplete.puml)
 
 ### Search field - Search profile
 
