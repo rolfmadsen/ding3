@@ -1,13 +1,9 @@
 @startuml
 title Search field and autocomplete
 
-    actor Patron
-    participant DDB CMS
-    database Opensearch service
-
-    note left of patron
-
-    end note
+    actor "Patron"
+    participant "DDB CMS"
+    database "Opensearch service"
 
     == Perform a search query ==
     "Patron"->"DDB CMS": Enter cursor in search field.
