@@ -1,5 +1,7 @@
 # ding3
 
+The purpose of this repository is, for the time being, to experiment with different methods to write a specification for the next generation of DDB CMS.
+
 ## Global navigation
 
 ## Front page
