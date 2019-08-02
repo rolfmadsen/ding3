@@ -29,9 +29,9 @@ The purpose of this repository is, for the time being, to experiment with differ
 
 ### User story diagrams (PlantUML)
 
-![Search](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_sequence-diagrams/search/PlantUML_user-story-diagrams\search.puml)
+![Search field](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_user-story-diagrams/Search/search.puml)
 
-![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=1&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_sequence-diagrams/search/PlantUML_user-story-diagrams\search.puml)
+![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=1&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_user-story-diagrams/Search/search.puml)
 
 ### User story functional specification
 
