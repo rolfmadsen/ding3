@@ -29,7 +29,11 @@ The purpose of this repository is, for the time being, to experiment with differ
 
 ### User story diagrams (PlantUML)
 
+#### Search field and autocomplete
+
 ![Search field](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_user-story-diagrams/Search/search.puml)
+
+#### Search result
 
 ![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=1&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_user-story-diagrams/Search/search.puml)
 
@@ -38,7 +42,7 @@ The purpose of this repository is, for the time being, to experiment with differ
 | Story ID 	| As a... 	| I can ...                                                      	| So that ...                                                               	|
 |----------	|---------	|----------------------------------------------------------------	|---------------------------------------------------------------------------	|
 | S001     	| Patron  	| Perform a search query                                         	| I can see the search result.                                              	|
-|          	|         	|                                                                	|                                                                           	|
+|----------	|----------	|----------------------------------------------------------------   |---------------------------------------------------------------------------	|
 | Flow     	| Step    	| When ...  [Syntax: actor|action|element]                          | Then ... [Syntax: element|reaction]                                           |
 | Main     	| 1       	| the patron clicks in the search field                          	| the searchfield becomes active                                            	|
 |          	| 2       	| the patron inputs text in the seach field                      	| the autocomplete function displays suggestions from the Ortograf service. 	|
