@@ -1,13 +1,14 @@
 @startuml
-title Search field and autocomplete
+title Sequence diagram - Search field and autocomplete
 
     actor "Patron"
     participant "DDB CMS"
     database "Opensearch service"
+    database "Ortograf service"
 
     == Perform a search query ==
     "Patron"->"DDB CMS": Enter cursor in search field.
-    "Browser"->"Patron": Search field active.
+    "DDB CMS"->"Patron": Search field active.
     "Patron"->"DDB CMS": Enter query string.
     "DDB CMS"->"Ortograf service": Request autocomplete suggestions for the query string.
     "Ortograf service"->"DDB CMS": Return autocomplete suggestions.
@@ -22,5 +23,33 @@ title Search field and autocomplete
         Search query should be validated and URL encoded appropriately.
     end note
     "Opensearch service"->"DDB CMS": Return search result.
+    "DDB CMS"->"Patron": Display search result.
+
+@enduml
+
+@startuml
+
+title Use case diagram - Search field and autocomplete
+
+actor Patron
+actor Opensearch service
+actor Ortograf service
+actor Search profile function
+
+
+rectangle search field
+
+Patron -> (Search)
+
+(autocomplete) -> (search) : extends
+(search profile) -> (search) : extends
+
+
+rectangle search result
+
+Patron (Select work collection)
+
+(Select work collection) -> (Filter search result) : extends
+(autocomplete) -> (Sort search result) : extends
 
 @enduml
