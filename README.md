@@ -75,8 +75,8 @@ Scenario display a work in the search result
 
 ## References
 
-PlantUML Sequence diagram - http://plantuml.com/sequence-diagram
-Gherkin syntax - https://cucumber.io/docs/gherkin/reference/
-Table to markdown generato - https://www.tablesgenerator.com/markdown_tables#
-User story functional specification - http://www.its-all-design.com/an-agile-functional-specification/
-PlantUML reference guide - http://plantuml.com/guide
+- PlantUML Sequence diagram - http://plantuml.com/sequence-diagram
+- Gherkin syntax - https://cucumber.io/docs/gherkin/reference/
+- Table to markdown generato - https://www.tablesgenerator.com/markdown_tables#
+- User story functional specification - http://www.its-all-design.com/an-agile-functional-specification/
+- PlantUML reference guide - http://plantuml.com/guide
