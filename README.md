@@ -14,37 +14,48 @@ The purpose of this repository is, for the time being, to experiment with differ
 ## Sections
 Mangler afklaring: Skal Paragraphs modulet benyttes i stedet for Sectionsmodulet (Editorial base).
 
-Indholdstyper:
-- Tabroll
-- Karusel
-- Nyheder
-- Arrangementer
-- Sektioner
-
 Panelser (https://upgrade-fbs.ddbcms.dk/admin/config/user-interface/ipe-filter)
-- Campaign
-- all_opening_hours
-- Popular
-- Interaction_pane
-- ding_nodelist
-- Serendipity_ting_object
-- ding_tabroll-ding_frontpage_tabroll
-- ding_event-ding_event_list_frontpage
-- ding_event-ding_event_simple_list
-- ding_groups-ding_group_overview_simple
-- carousel
-- ding_news-ding_news_frontpage_list
+- Available panel panes
+    - Campaign [boolean]
+    - all_opening_hours [boolean]
+    - Popular [boolean]
+    - Interaction_pane [boolean]
+    - ding_nodelist [boolean]
+    - Serendipity_ting_object [boolean]
+    - ding_tabroll-ding_frontpage_tabroll [boolean]
+    - ding_event-ding_event_list_frontpage [boolean]
+    - ding_event-ding_event_simple_list [boolean]
+    - ding_groups-ding_group_overview_simple [boolean]
+    - carousel [boolean]
+    - ding_news-ding_news_frontpage_list [boolean]
 
 Ding nodelist (https://upgrade-fbs.ddbcms.dk/admin/config/ding/ding_nodelist)
-- Liste over indholdstyper
-- Standard mellemlagringstid (0s|15s|30s|1m|2m|3m|4m|5m|10m|15m|30m|1t|2t|4t|8t|12t|1d|2d|3d|4d|1u)
-- Standard autoscroll forsinkelse for karusel [ms]
+- Tilgængelige indholdstyper
+    - Liste over indholdstyper
+        - Begivenhed [boolean]
+        - E-resurse [boolean]
+        - Nyhed [boolean]
+        - Side [boolean]
+    - Standard mellemlagringstid [0s|15s|30s|1m|2m|3m|4m|5m|10m|15m|30m|1t|2t|4t|8t|12t|1d|2d|3d|4d|1u]
+    - Standard autoscroll forsinkelse for karusel [ms]
 
 ## News
 
-- Number of news (https://upgrade-fbs.ddbcms.dk/admin/config/ding/news)
+- Ding news settings (https://upgrade-fbs.ddbcms.dk/admin/config/ding/news)
+    - Number of news [10|12|14|16|20]
 
 ## Events
+
+- Ding event settings (https://upgrade-fbs.ddbcms.dk/admin/config/ding_event/settings)
+    - Valuta radio:[kr.|€]
+    - Frontpage
+        Events in frontpage list [3-6|6-12|9-18]
+        Only promoted events [boolean]
+    - Arrangementer
+        - Number of events [10|12|14|16|20]
+        Group events by date [boolean]
+
+### Billetsystem - Place2book
 
 - Place2book indstillinger (https://upgrade-fbs.ddbcms.dk/admin/config/ding/place2book/defaults)
     - Default event maker radio:[list_of_branches]
@@ -78,19 +89,13 @@ Ding nodelist (https://upgrade-fbs.ddbcms.dk/admin/config/ding/ding_nodelist)
         - For voksne [børn|unge|voksn|ældre]
         - For ældre [børn|unge|voksn|ældre]
     - Kultunaut export category
-        - 
+        - Børn list:[Kultunaut_export_categories]
+        - Foredrag & debat list:[Kultunaut_export_categories]
+        - Internet & undervisning list:[Kultunaut_export_categories]
+        - Litteratur list:[Kultunaut_export_categories]
+        - Musik list:[Kultunaut_export_categories]
+        - Udstilling list:[Kultunaut_export_categories]
 
-- Arrangementer på forsiden (<front>)
-    - Antal arrangementer på forsiden
-    - Vis kun arrangementer med markeringen "Vis på forsiden / "Promoted"
-- Arrangementslisten (/events)
-    - Antal arrangementer på arrangementslisten
-    - Sortéring efter dato eller måned
-
-- Generelt
-    - Valuta
-
-Kilde: https://upgrade-fbs.ddbcms.dk/admin/config/ding_event/settings
 
 ## Library brances
 
@@ -118,21 +123,25 @@ Mangler afklaring - Kan et overblik over e-ressourcer genereres bedre?
 
 ## Search
 
-- Ding search service settings (https://upgrade-fbs.ddbcms.dk/admin/config/ding/provider/opensearch)
-    - bliotekskode [integer]
-    - Search service URL [URL]
-    - Authentication
-        - Use authentication [boolean]
-        - Navn [string]
-        - Adgangskode [string]
-        - Gruppe [string]
-    - Recommendation service URL [URL]
-    - Search profile [string]
-    - Infomedia web service URL [URL]
-    - Akrivér logging [boolean]
-    - Cache udløb [1m|5m|15m|30m|1t|3t|12t|1d|3d|1u]
+### User story diagrams (PlantUML)
 
-- Search result boost (https://upgrade-fbs.ddbcms.dk/admin/config/opensearch/rank)
+### konfiguration
+
+#### Ding search service settings (https://upgrade-fbs.ddbcms.dk/admin/config/ding/provider/opensearch)
+- bliotekskode [integer]
+- Search service URL [URL]
+- Authentication
+    - Use authentication [boolean]
+    - Navn [string]
+    - Adgangskode [string]
+    - Gruppe [string]
+- Recommendation service URL [URL]
+- Search profile [string]
+- Infomedia web service URL [URL]
+- Akrivér logging [boolean]
+- Cache udløb [1m|5m|15m|30m|1t|3t|12t|1d|3d|1u]
+
+#### Rankering og boost
 
 Omhandler rankering og boost af søgeresultatet.
 
@@ -150,18 +159,9 @@ Omhandler rankering og boost af søgeresultatet.
         - Værdi [string]
         - Vægt [integer]
 
-!(Screenshot of search result page)[]
-
-### Prerequisites
-
-- Profile.
-- Agency.
-- Client credentials for Opensearch API.
-- Client credentials for FBS API.
-
-### User story diagrams (PlantUML)
-
 #### Search field and autocomplete
+
+!(Screenshot of search result page)[]
 
 - Opensearch search autocomplete settings (https://upgrade-fbs.ddbcms.dk/admin/config/opensearch/autocomplete)
 -   Autocomplete service URL [URL]
@@ -227,44 +227,32 @@ Behanldet i https://platform.dandigbib.org/issues/3146
 ## Lånerstatus
 
 - FSB service settinss (https://upgrade-fbs.ddbcms.dk/admin/config/ding/provider/fbs)
-    - FBS endpoint URL
-    - ISIL
-    - Brugernavn
-    - Adgangskode
-    - Vælg interesseperiode
-    - Enable reservation deletion
-    - Disable insterest period
-    - Search brances blacklist
-        - Liste med brances
-    - User bances blacklist
-        - Liste med brances
-    - Holdings brances blacklist
-        - Liste med brances
+    - FBS endpoint URL [URL]
+    - ISIL [string]
+    - Brugernavn [string]
+    - Adgangskode [string]
+    - Vælg interesseperiode [1m|2m|3m|6m|12m]
+    - Enable reservation deletion [boolean]
+    - Disable insterest period [boolean]
+    - Search branches blacklist list:[brances]
+    - User branches blacklist list:[brances]
+    - Holdings branches blacklist list:[brances]
 - Ding provider (https://upgrade-fbs.ddbcms.dk/admin/config/ding/provider)
-    - Delete provider users that are inactive for (none|1y|2y|3y|4y|5y)
+    - Delete provider users that are inactive for [none|1y|2y|3y|4y|5y]
 
 ### Mellemværender (Betaling via DIBS)
 
 - Indstillinger (https://upgrade-fbs.ddbcms.dk/admin/config/payment/ding_dibs)
-    - Terms of sale
-    - Kreditkort typer
-    - Slet transaktioner ældre end: none|30d|90d|1y
+    - Terms of sale [string]
+    - Kreditkort typer checklist[supported_card_types]
+    - Slet transaktioner ældre end: [none|30d|90d|1y]
 
 - Notifikation til webmaster (https://upgrade-fbs.ddbcms.dk/admin/config/payment/ding_dibs/emails)
-    - Cron daglig afvikling på dato
-    - e-mail-adresser der skal adviseres ved problemer
-        - Udestående: definér problemer
+    - Cron daglig afvikling på dato [date-hh:mm]
+    - e-mail-adresser der skal adviseres ved problemer [string]
 
 - Rapporter (https://upgrade-fbs.ddbcms.dk/admin/config/payment/ding_dibs/reports)
-    - Order ID
-    - Transaction ID
-    - Dato
-    - Bruger
-    - Tekst
-    - Beløb
-    - Cleared true/false
-    - Paid true/false
-    - Captured true/false
+    - table:|Order ID|Transaction ID|Dato|Bruger|Tekst|Beløb|Cleared true/false|Paid true/false|Captured true/false|
 
 ## User profile
 
@@ -284,27 +272,28 @@ Opmærkning af elementer der skal trackes af Webtrekk.
 
 ### BPI
 - Serviceindstillinger (https://upgrade-fbs.ddbcms.dk/admin/config/bpi/settings)
-    - Biblioteksnummer
-    - WS URL
-    - Key (Secret)
-    - Public key
+    - Biblioteksnummer [integer]
+    - WS URL [URL]
+    - Key (Secret) [string]
+    - Public key [string]
 - Indholdstilknytning (https://upgrade-fbs.ddbcms.dk/admin/config/bpi/content_mapping)
-    - Indholdstype (Nyhed|Bibliotek|Campaign|Campaing PLUS|E-resurse|Grupper|Nyhed|Panel|Rolltab|Side|Webform)
-    - Titel
-    - Resumé (Body|Fax|Lead|Phone|Slug|)
-    - Brødtekst (Body|Fax|Lead|Phone|Slug|)
-    - BPI tags (Body|Fax|Lead|Phone|Slug|)
-    - BPI materials (Body|Fax|Lead|Phone|Slug|)
-    - Syndication settings (Inkludér tags på syndikeret artikel)
+    - Indholdstype [Nyhed|Bibliotek|Campaign|Campaing_PLUS|E-resurse|Grupper|Nyhed|Panel|Rolltab|Side|Webform]
+    - Titel Default[titel]
+    - Resumé [Body|Fax|Lead|Phone|Slug]
+    - Brødtekst [Body|Fax|Lead|Phone|Slug]
+    - BPI tags [Body|Fax|Lead|Phone|Slug]
+    - BPI materials [Body|Fax|Lead|Phone|Slug]
+    - Syndication settings
+        - Syndicate tags [boolean]
 
 ### Adgangsplatformen (https://upgrade-fbs.ddbcms.dk/admin/config/ding/auth)
-- Client ID
-- Client secret
-- Omdirigér til URL
-- Authorization service
-- Access token service
-- Resource end-point
-- Log ud
+- Client ID [string]
+- Client secret [string]
+- Omdirigér til URL [URL]
+- Authorization service [URL]
+- Access token service [URL]
+- Resource end-point [URL]
+- Log ud [URL]
 
 ## Integrationslag (API'er og abstraktionslag)
 - Databrønd
@@ -316,29 +305,36 @@ Opmærkning af elementer der skal trackes af Webtrekk.
 ## Campaign PLUS (https://upgrade-fbs.ddbcms.dk/admin/config/ding/campaigns_plus)
 
 - Vægt
+    - list:[facets]
 - Facets
+    - list:[facets]
 - Auto generated campaigns
-- Facets
-- Object view
-- Søg
-- Notification scan interval
-- Campaign cache expire
+    - Grundlæggende radio:[ingen|bibliotek|ord_i_ordforråd|gruppe|search_term_match]
+    - Facets
+        radio:[facets]
+    - Object view
+        Aktivér [boolean]
+    - Søg
+        Aktivér [boolean]
+    - Notification scan interval [0s|1t|3t|6t|9t|12t|1d|2d|4d|1u|2u|4u]
+    - Campaign cache expire [integer]
 
-**.facetResult.facet.facetTerm.facet
 
 ## Ding DDBasic opening hours (https://upgrade-fbs.ddbcms.dk/admin/config/ding/ddbasic-opening-hours)
 
-- Extended title
-- Expand settings
+- Extended title [boolean]
+- Expand settings [dont_expand|expand_on_first_library|expand_all_libraries]
 
 Mangler afklaring: Hvad benyttes denne funktion til?
 
 ## Ding mobile search - eksport til CMS Content service (https://upgrade-fbs.ddbcms.dk/admin/config/ding/mobilesearch/content-export)
 
-- List node typer (Checkmark til markering af eksport vises på alle valgte indholdstyper)
+- Eksportér
+    Indholdstype checkboks:[begivenhed|bibliotek|nyhed]
 
 ## Oversættelser
 
+Mangler afklaring:
 - Localization server
 - Context på alle oversættelser (Skal tilføjes til Code guidelines)
 
