@@ -203,6 +203,10 @@ Omhandler rankering og boost af søgeresultatet.
 
 #### Work collections
 
+#### Manifestation
+
+![Shelfmark](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/ding3/PlantUML_activity-diagrams/shelfmark.puml)
+
 ##### Periodicals
 
 UX oplæg - https://projects.invisionapp.com/share/2XND9K1EVY6#/screens/319278647
@@ -346,6 +350,24 @@ Mangler afklaring:
 
 Mangler afklaring
 
+
+## Forslag til eksterne services
+
+- Terms of use texts service
+    - Samtykke (https://upgrade-fbs.ddbcms.dk/admin/config/ding/consent)
+    - Cookies (?)
+    - GDPR (?)
+
+
+## Forslag til nedprioritering af funktionalitet
+
+Mangler afklaring:
+
+- Dynamic backgrounds (https://upgrade-fbs.ddbcms.dk/admin/config/user-interface/backgrounds/)
+- Ding interaction (https://upgrade-fbs.ddbcms.dk/admin/config/ding/interaction)
+- Place2book migration to new api (https://upgrade-fbs.ddbcms.dk/admin/config/ding/place2book/migrate)
+
+
 ## References
 
 - PlantUML Sequence diagram - http://plantuml.com/sequence-diagram
@@ -357,18 +379,3 @@ Mangler afklaring
 - PlantUML editor - https://www.planttext.com/
 - PlantUML source code - https://github.com/plantuml/plantuml/tree/master/src/sprites/archimate
 - PlantUML Arhcimate Macros - https://raw.githubusercontent.com/ebbypeter/Archimate-PlantUML/master/Archimate.puml
-
-## Forslag til eksterne services
-
-- Terms of use texts service
-    - Samtykke (https://upgrade-fbs.ddbcms.dk/admin/config/ding/consent)
-    - Cookies (?)
-    - GDPR (?)
-
-## Forslag til nedprioritering af funktionalitet
-
-Mangler afklaring:
-
-- Dynamic backgrounds (https://upgrade-fbs.ddbcms.dk/admin/config/user-interface/backgrounds/)
-- Ding interaction (https://upgrade-fbs.ddbcms.dk/admin/config/ding/interaction)
-- Place2book migration to new api (https://upgrade-fbs.ddbcms.dk/admin/config/ding/place2book/migrate)

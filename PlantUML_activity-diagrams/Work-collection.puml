@@ -1,13 +1,7 @@
 @startuml
 start
 
-if (search-result)
-
-fork
-    :For each work request cover
-fork again
-    :For each work request availability
-if (dc.title has value) then (yes)
+if (Mere dn 1 hjemlån) then (yes)
   :Text 1;
 elseif (condition B) then (yes)
   :Text 2;
@@ -19,33 +13,7 @@ elseif (condition D) then (yes)
 else (nothing)
   :Text else;
 endif
+
 stop
-@enduml
-
-@startuml
-
-Title <dc:title>
-
-start
-
-if (**.dkabm:record.hasOwnProperty('dc.title')) then (yes)
-
-elseif 
-
-
-endif
-
-@enduml
-
-
-@startuml
-
-Title <dc:title xsi:type="dkdcplus:full">
-
-start
-
-if (**.dkabm:record.hasOwnProperty('dc.title')) then (yes)
-
-endif
 
 @enduml
