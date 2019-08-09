@@ -213,7 +213,7 @@ Omhandler rankering og boost af søgeresultatet.
 
 ### Søgeresultat - filtrér, sortér eller paginér
 
-![Søgeresultat - filtrér, sortér eller paginér](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes\soegning\2-filtrer_sorter_paginer_soegeresultat.puml)
+![Søgeresultat - filtrér, sortér eller paginér](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/soegning/2-filtrer_sorter_paginer_soegeresultat.puml)
 
 #### Information
 
@@ -276,7 +276,7 @@ Behanldet i https://platform.dandigbib.org/issues/3146
 
 ### Red rout - Mellemværender (Betaling via DIBS)
 
-![Betal mellemværende](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/mellemværender/betal_mellemvaerende.puml)
+![Betal mellemværende](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/mellemvaerender/betal_mellemvaerende.puml)
 
 - Indstillinger (https://upgrade-fbs.ddbcms.dk/admin/config/payment/ding_dibs)
     - Terms of sale [string]
