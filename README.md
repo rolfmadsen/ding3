@@ -1,12 +1,30 @@
 # ding3
 
-The purpose of this repository is, for the time being, to experiment with different methods to write a specification for the next generation of DDB CMS.
+Formålet med dette repositorie er, på nuværende tidspunkt, at eksperimentere med forskellige metoder til at udarbejde en kravspecifikation for næste generation af DDB CMS.
+
+## Metode
+
+Red route
+Usecase
+
+Interaktionspunkter
+Elementer + Datagrundlag
+Afhængigheder til øvrige funktioner eller eksterne systemer
+
+GDPR
+Tilgængelighed
 
 ## Global navigation
 
+### Header
+
+#### Ikon og biblioteksnavn
+
+### Hovedmenu
+
 ## Front page
 
-- Promote content types to frontpage
+- Promote content types to frontpage (https://upgrade-fbs.ddbcms.dk/admin/config/ding/fe-promote)
     - Promote types to frontpage
         - Nyhed [boolean]
         - Begivenhed [boolean]
@@ -169,11 +187,15 @@ Omhandler rankering og boost af søgeresultatet.
     - Max suggestions [integer]
     - Minimum string [integer]
 
-![Search field](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_user-story-diagrams/Search/search.puml)
+![Search field](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/Search/search.puml)
+
+##### Red route - Udør søgning: Søgefelt, autocomplete og søgeprofil
+
+![Udfør søgning: Søgefelt, autocomplete og søgeprofil](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/soegning/1_udfoer_søgning-soegefelt_autocomplete_soegeprofil.puml)
 
 #### Search result
 
-![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=1&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_user-story-diagrams/Search/search.puml)
+![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=1&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/Search/search.puml)
 
 ### User story functional specification
 
@@ -187,17 +209,11 @@ Omhandler rankering og boost af søgeresultatet.
 |          	| 3a      	| the patron clicks on the search profile dropdown menu.         	| the search profile drop down menu opens                                   	|
 |          	| 3a1     	| the patron selects a value in the search profile dropdown menu 	| the search profile dropdown menu displays the selected value              	|
 
-### Search field and autocomplete
+![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/sequence-diagrams/search/search-field-and-autocomplete.puml)
 
-![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_sequence-diagrams/search/search-field-and-autocomplete.puml)
+### Søgeresultat - filtrér, sortér eller paginér
 
-### Search field - Search profile
-
-### Facet browser
-
-### Sort
-
-### Search result
+![Søgeresultat - filtrér, sortér eller paginér](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes\soegning\2-filtrer_sorter_paginer_soegeresultat.puml)
 
 #### Information
 
@@ -205,7 +221,7 @@ Omhandler rankering og boost af søgeresultatet.
 
 #### Manifestation
 
-![Shelfmark](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_activity-diagrams/shelfmark.puml)
+![Shelfmark](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/activity-diagrams/shelfmark.puml)
 
 ##### Periodicals
 
@@ -244,7 +260,23 @@ Behanldet i https://platform.dandigbib.org/issues/3146
 - Ding provider (https://upgrade-fbs.ddbcms.dk/admin/config/ding/provider)
     - Delete provider users that are inactive for [none|1y|2y|3y|4y|5y]
 
-### Mellemværender (Betaling via DIBS)
+### Lån
+
+#### Red rout - Forny lån
+
+![Forny lån](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/laan/forny_laan.puml)
+
+#### Red rout - Se afleveringsdato
+
+![Se afleveringsdato](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/laan/se_afleveringsdato.puml)
+
+### Red rout - Reserveringer
+
+![Slet reservering](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/reserveringer/slet_reservering.puml)
+
+### Red rout - Mellemværender (Betaling via DIBS)
+
+![Betal mellemværende](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/mellemværender/betal_mellemvaerende.puml)
 
 - Indstillinger (https://upgrade-fbs.ddbcms.dk/admin/config/payment/ding_dibs)
     - Terms of sale [string]
@@ -259,6 +291,15 @@ Behanldet i https://platform.dandigbib.org/issues/3146
     - table:|Order ID|Transaction ID|Dato|Bruger|Tekst|Beløb|Cleared true/false|Paid true/false|Captured true/false|
 
 ## User profile
+
+### Red rout - Opret låner
+![Opret låner](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/brugerprofil/opret_laaner.puml)
+
+### Red rout - Skift afhentningsfilial
+![Skift afhentningsfilial](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/brugerprofil/skift_afhentningsfilial.puml)
+
+### Red rout - Skift fraværsperiode
+![Skift fraværsperiode](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/brugerprofil/skift_fravaersperiode.puml)
 
 
 ## Globale funktioner
@@ -344,12 +385,21 @@ Mangler afklaring:
 
 ## DDB Architecture
 
-![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML_sequence-diagrams/search/search-field-and-autocomplete.puml)
+![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/sequence-diagrams/search/search-field-and-autocomplete.puml)
 
 ## Ding consent (https://upgrade-fbs.ddbcms.dk/admin/config/ding/consent)
 
 Mangler afklaring
 
+## Statistik - udelad (/user)
+
+Undgå at statistik opsamles for lånerstatus og brugerprofil (/user)
+
+## Search engine indexing (robots.txt) - udelad /user samt /search/ting/
+
+Undgå at søgemaskiner indekserer:
+- lånerstatus og brugerprofil (/user).
+- søgeresultat-, værkvisnings- samt materialevisningssider (/search/ting/)
 
 ## Forslag til eksterne services
 
