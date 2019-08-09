@@ -189,13 +189,15 @@ Omhandler rankering og boost af søgeresultatet.
 
 ![Search field](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/Search/search.puml)
 
-##### Red route - Udør søgning: Søgefelt, autocomplete og søgeprofil
+##### Red route - Udfør søgning: Søgefelt, autocomplete og søgeprofil
 
-![Udfør søgning: Søgefelt, autocomplete og søgeprofil](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/soegning/1_udfoer_søgning-soegefelt_autocomplete_soegeprofil.puml)
+![Udfør søgning: Søgefelt, autocomplete og søgeprofil]
+(http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/red-routes/soegning/1_udfoer_soegning-soegefelt_autocomplete_soegeprofil.puml)
 
 #### Search result
 
-![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=1&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/Search/search.puml)
+![Search result]
+(http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=1&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/Search/search.puml)
 
 ### User story functional specification
 
