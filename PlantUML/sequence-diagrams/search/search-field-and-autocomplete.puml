@@ -26,30 +26,3 @@ title Sequence diagram - Search field and autocomplete
     "DDB CMS"->"Patron": Display search result.
 
 @enduml
-
-@startuml
-
-title Use case diagram - Search field and autocomplete
-
-actor Patron
-actor Opensearch service
-actor Ortograf service
-actor Search profile function
-
-
-rectangle search field
-
-Patron -> (Search)
-
-(autocomplete) -> (search) : extends
-(search profile) -> (search) : extends
-
-
-rectangle search result
-
-Patron (Select work collection)
-
-(Select work collection) -> (Filter search result) : extends
-(autocomplete) -> (Sort search result) : extends
-
-@enduml

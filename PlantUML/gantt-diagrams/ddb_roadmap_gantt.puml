@@ -81,6 +81,11 @@ then [Availability_holdings_order feature complete]                 lasts 1 days
     then [FN: User mellemværender (DIBS)]                           lasts 1 days
 then [Availability_holdings_order feature complete]                 lasts 1 days
 
+[Lånerstatus eReolen EPIC] starts at [Availability_holdings_order feature complete]'s end
+    then [WS: publizon]                     lasts 1 days
+    then [FN: Lånerstatus fra eReolen]                                           lasts 1 days
+then [Lånerstatus eReolen feature complete]                 lasts 1 days
+
 
 -- Brugerprofil --
 
