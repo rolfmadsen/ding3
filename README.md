@@ -230,7 +230,7 @@ Omhandler rankering og boost af søgeresultatet.
 
 #### Manifestation
 
-![Shelfmark](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/activity-diagrams/marcxchange_mapping_specifications/shelfmark.puml)
+![Shelfmark](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/activity_diagrams/marcxchange_mapping_specifications/shelfmark.puml)
 
 ##### Periodicals
 
