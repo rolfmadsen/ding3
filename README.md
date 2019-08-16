@@ -14,6 +14,10 @@ Afhængigheder til øvrige funktioner eller eksterne systemer
 GDPR
 Tilgængelighed
 
+## DDB CMS Roadmap
+
+![DDB CMS Roadmap](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/gantt/ddb_roadmap_gantt.puml)
+
 ## Global navigation
 
 ### Header
