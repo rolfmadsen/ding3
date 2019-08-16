@@ -194,9 +194,9 @@ Omhandler rankering og boost af søgeresultatet.
     - Max suggestions [integer]
     - Minimum string [integer]
 
-![Search field](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/Search/search_field_autocomplete.puml)
+![Search field](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/search/search_field_autocomplete.puml)
 
-![Search field](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/Search/search_result.puml)
+![Search field](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/search/search_result.puml)
 
 ##### Red route - Udfør søgning: Søgefelt, autocomplete og søgeprofil
 
@@ -204,7 +204,7 @@ Omhandler rankering og boost af søgeresultatet.
 
 #### Search result
 
-![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=1&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/Search/search.puml)
+![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=1&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/search/search_result.puml)
 
 ### User story functional specification
 
