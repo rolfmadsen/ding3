@@ -394,7 +394,7 @@ Mangler afklaring:
 
 ## DDB Architecture
 
-![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/archimate-diagrams/ddb_arkitektur_niveau_1.puml.puml)
+![Search result](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/archimate-diagrams/ddb_arkitektur_niveau_1.puml)
 
 
 ## Ding consent (https://upgrade-fbs.ddbcms.dk/admin/config/ding/consent)
