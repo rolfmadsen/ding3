@@ -12,9 +12,9 @@ start
 :Klik på "Opret bruger";
 :Klik på Acceptér og;
 if (gem samtykke) then (ja)
-:Acceptér, men gem IKKE samtykke;
-else (nej)
-:Acceptér, og gem samtykke;
+    :Acceptér, men gem IKKE samtykke;
+    else (nej)
+    :Acceptér, og gem samtykke;
 endif
 :Udfyld brugerformular;
 :Klik på "Create me;

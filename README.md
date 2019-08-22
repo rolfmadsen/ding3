@@ -4,10 +4,10 @@ Formålet med dette repositorie er, på nuværende tidspunkt, at eksperimentere 
 
 ## Metode
 
-Red route  (PlantUML activity diagram)
 Usecase (PlantUML usecase diagram)
+Red route  (PlantUML activity diagram)
 Systeminteraktioner (PlantUML Sekvensdiagrammer)
-Acceptkriterier (BDD Gherkin syntax)
+Acceptkriterier (Behat Gherkin syntax)
 
 Marcxchange mapping specification (PlantUML activity diagram)
 Arkitekturmodeller (PlantUML archimate diagram)
@@ -24,6 +24,16 @@ NB. PlantUML Gantt diagram
 ## Global navigation
 
 ### Header
+
+### Opret ny låner
+
+![Opret ny låner](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/user/1_opret_laaner.puml)
+
+### Log ind
+
+![Log ind](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/user-story-diagrams/user/2_log_ind.puml)
+
+![Log ind](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/activity_diagrams/red-routes/brugerprofil/2_log_ind.puml)
 
 #### Ikon og biblioteksnavn
 
@@ -302,7 +312,7 @@ Behanldet i https://platform.dandigbib.org/issues/3146
 ## User profile
 
 ### Red rout - Opret låner
-![Opret låner](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/activity_diagrams/red-routes/brugerprofil/opret_laaner.puml)
+![Opret låner](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/activity_diagrams/red-routes/brugerprofil/1_opret_laaner.puml)
 
 ### Red rout - Skift afhentningsfilial
 ![Skift afhentningsfilial](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&idx=0&src=https://raw.githubusercontent.com/danskernesdigitalebibliotek/ding3/master/PlantUML/activity_diagrams/red-routes/brugerprofil/skift_afhentningsfilial.puml)
