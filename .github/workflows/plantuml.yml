@@ -13,7 +13,7 @@ jobs:
       - name: Generate images from diagrams
         uses: docker://miy4/plantuml
         with:
-          args: "./docs/*.puml -tsvg"
+          args: "./PlantUML/*.puml -tsvg"
       - name: Commit updated diagram images
         uses: EndBug/add-and-commit@v2.1.0
         with:
