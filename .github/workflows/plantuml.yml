@@ -19,7 +19,7 @@ jobs:
         uses: EndBug/add-and-commit@v2.1.0
         with:
           message: Update PlantUML diagram images
-          path: "./docs"
+          path: "./plantuml"
           pattern: "*.svg"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
