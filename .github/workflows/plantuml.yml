@@ -1,8 +1,8 @@
 on:
   push:
     paths:
-      - '**/*.puml'
-      - plantuml/archimate-diagrams/*.puml/
+      - 'plantuml/*.puml'
+      - 'plantuml/archimate-diagrams/*.puml'
 
 name: PlantUML
 jobs:
