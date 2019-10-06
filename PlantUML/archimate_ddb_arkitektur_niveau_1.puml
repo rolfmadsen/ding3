@@ -1,7 +1,7 @@
 @startuml
 !includeurl https://raw.githubusercontent.com/ebbypeter/Archimate-PlantUML/master/Archimate.puml
 
-title Achimate diagram over DDB arkitekturen
+title Achimate diagram over DDB's arkitektur.
 
 Package "Låner brugergrænseflader" {
     Application_Component(ddb_cms, "DDB CMS")
