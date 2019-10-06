@@ -1,8 +1,7 @@
 on:
   push:
     paths:
-      - 'plantuml/*.puml'
-      - 'plantuml/*/*.puml'      
+      - 'docs/*.puml'
 
 name: PlantUML
 jobs:
@@ -14,12 +13,12 @@ jobs:
       - name: Generate images from diagrams
         uses: docker://miy4/plantuml
         with:
-          args: "./plantuml/*.puml -tsvg"
+          args: "./docs/*.puml -tsvg"
       - name: Commit updated diagram images
         uses: EndBug/add-and-commit@v2.1.0
         with:
           message: Update PlantUML diagram images
-          path: "./plantuml"
+          path: "./docs"
           pattern: "*.svg"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
