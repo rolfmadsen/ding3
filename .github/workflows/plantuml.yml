@@ -1,7 +1,8 @@
 on:
   push:
     paths:
-      - 'plantuml/*.puml'
+      - '../../plantuml/*.puml'
+      - '../../plantuml/*/*.puml'      
 
 name: PlantUML
 jobs:
